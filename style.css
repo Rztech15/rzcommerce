@@ -8,8 +8,10 @@ font-family:'Poppins',sans-serif;
 body{
 background:#fffaf4;
 color:#222;
+line-height:1.6;
 }
 
+/* NAVBAR */
 .navbar{
 display:flex;
 justify-content:space-between;
@@ -43,12 +45,13 @@ font-weight:500;
 color:#d4af37;
 }
 
+/* HERO */
 .hero{
-height:90vh;
+min-height:90vh;
 display:flex;
 align-items:center;
 justify-content:center;
-padding:20px;
+padding:40px 20px;
 background:#000;
 color:white;
 overflow:hidden;
@@ -61,24 +64,25 @@ justify-content:space-between;
 width:100%;
 max-width:1200px;
 gap:40px;
-height:100%;
 }
 
+/* IMAGE FIXED PROPERLY */
 .hero-image{
 flex:1;
 display:flex;
 align-items:center;
 justify-content:center;
-height:100%;
 max-height:600px;
 overflow:hidden;
 }
 
 .hero-image img{
-width:100%;
-height:100%;
+max-width:100%;
+max-height:500px;
+width:auto;
+height:auto;
 object-fit:contain;
-max-width:500px;
+display:block;
 }
 
 .hero-content{
@@ -99,6 +103,7 @@ margin-bottom:15px;
 line-height:1.6;
 }
 
+/* BUTTON */
 .btn{
 display:inline-block;
 background:#d4af37;
@@ -118,6 +123,7 @@ transform:translateY(-3px);
 box-shadow:0 5px 15px rgba(212,175,55,0.3);
 }
 
+/* SECTIONS */
 section{
 padding:80px 8%;
 }
@@ -129,6 +135,7 @@ margin-bottom:40px;
 color:#111;
 }
 
+/* PRODUCTS */
 .products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -175,6 +182,7 @@ font-size:24px;
 margin-bottom:15px;
 }
 
+/* BUNDLE */
 #bundle{
 background:#111;
 color:white;
@@ -196,6 +204,7 @@ font-size:18px;
 margin-bottom:20px;
 }
 
+/* CONTACT */
 #contact{
 text-align:center;
 }
@@ -205,6 +214,7 @@ font-size:18px;
 margin-bottom:20px;
 }
 
+/* FOOTER */
 footer{
 background:#111;
 color:white;
@@ -216,6 +226,7 @@ footer p{
 font-size:14px;
 }
 
+/* RESPONSIVE */
 @media(max-width:768px){
 
 .navbar{
@@ -231,23 +242,17 @@ gap:15px;
 }
 
 .hero{
-height:auto;
-min-height:100vh;
-padding:40px 20px;
+min-height:auto;
+padding:50px 20px;
 }
 
 .hero-container{
 flex-direction:column;
 gap:30px;
-height:auto;
 }
 
 .hero-image{
 max-height:400px;
-}
-
-.hero-image img{
-max-width:100%;
 }
 
 .hero-content{
@@ -269,7 +274,6 @@ padding:60px 5%;
 
 section h2{
 font-size:30px;
-margin-bottom:30px;
 }
 
 .products{
@@ -279,14 +283,9 @@ grid-template-columns:1fr;
 #bundle h3{
 font-size:28px;
 }
-
 }
 
 @media(max-width:480px){
-
-.navbar{
-padding:12px 4%;
-}
 
 .logo{
 font-size:22px;
@@ -313,12 +312,11 @@ padding:10px 20px;
 font-size:14px;
 }
 
-section h2{
-font-size:26px;
-}
-
 section{
 padding:50px 4%;
 }
 
+section h2{
+font-size:26px;
+}
 }
