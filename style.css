@@ -48,7 +48,7 @@ body {
   color: #d4af37;
 }
 
-/* ================= HERO (YOUR CORRECT VERSION - KEPT SAME) ================= */
+/* ================= HERO (FROM FIRST CODE - FLEX VERSION) ================= */
 .hero {
   display: flex;
   align-items: center;
@@ -115,7 +115,7 @@ body {
   display: block;
 }
 
-/* ================= SECTIONS (RESTORED ORIGINAL STYLE) ================= */
+/* ================= SECTIONS (FROM SECOND CODE) ================= */
 section {
   padding: 80px 8%;
 }
@@ -205,7 +205,7 @@ footer {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 140px 20px 80px;
+    padding: 60px 6%;
   }
 
   .hero-content {
